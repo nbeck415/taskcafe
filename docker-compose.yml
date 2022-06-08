@@ -20,7 +20,7 @@ services:
   postgres:
     image: postgres:12.3-alpine
     ports: 
-      - "3333:3333"
+      - "5432:5432"
     restart: always
     networks:
       - taskcafe-test
