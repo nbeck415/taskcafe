@@ -1,9 +1,10 @@
 version: "3"
 services:
   web:
+    labels:
+        shipyard.route: '/'
     image: taskcafe/taskcafe:latest
     # build: .
-    shipyard.route: /
     ports:
       - "3333:3333"
     depends_on:
